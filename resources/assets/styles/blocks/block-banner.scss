@@ -1,0 +1,33 @@
+.block-banner {
+  background-size: cover;
+  padding: 125px 0 184px;
+  position: relative;
+
+  @include medium-up {
+    padding: 142px 0 220px;
+  }
+
+  .flex {
+    flex-direction: column;
+
+    h1 {
+      font-weight: $font-weight-medium;
+      width: 95%;
+      line-height: 40px;
+      font-size: 30px;
+
+      @include small-up {
+        width: 70%;
+        line-height: 50px;
+        font-size: 40px;
+      }
+
+      @include medium-up {
+        margin-bottom: 27px;
+        max-width: 948px;
+        line-height: 140px;
+        font-size: 110px;
+      }
+    }
+  }
+}
